@@ -7,22 +7,19 @@ using namespace std;
 int
 main(void)
 {
-  TComplejo a;
-  TComplejo b(a);
-  TComplejo c;
-  c = a;
-  
-  if(a == b)
-    cout << "SI" << endl;
-  else
-    cout << "NO" << endl;
+	TComplejo a;
+	TComplejo b(a);
+	TComplejo c;
+	c = a;
+		
+	cout << "a == b --> true" << endl;
+	if(a == b){
+		cout << "true" << endl;
+	} else {
+		cout << "false" << endl;
+	}
+	
 
-  if(a == c)
-    cout << "SI" << endl;
-  else
-    cout << "NO" << endl;
-
-
-  return 0;
+	return 0;
 }
 
