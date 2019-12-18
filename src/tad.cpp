@@ -25,12 +25,18 @@ main(void)
 	
 	f = d + e;
 
-	cout << "f == d + e  --> true" << endl;
+	cout << "f = d + e  --> true" << endl;
 	if((d.Re() + e.Re()) == f.Re() && (d.Im() + e.Im()) == f.Im())
 		cout << "true" << endl;
 	else
 		cout << "false" << endl;
 
+	f = d - e;
+	cout << "f = d - e  --> true" << endl;
+	if((d.Re() - e.Re()) == f.Re() && (d.Im() - e.Im()) == f.Im())
+		cout << "true" << endl;
+	else
+		cout << "false" << endl;
 	return 0;
 }
 
