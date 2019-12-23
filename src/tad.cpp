@@ -19,6 +19,7 @@ main(void)
 		cout << "false" << endl;
 	}
 	
+	/////////////////////////////////////////
 	TComplejo d(0,0);
 	TComplejo e(1,0);
 	TComplejo f;
@@ -30,13 +31,34 @@ main(void)
 		cout << "true" << endl;
 	else
 		cout << "false" << endl;
-
+	
+	///////////////////////////////
 	f = d - e;
 	cout << "f = d - e  --> true" << endl;
 	if((d.Re() - e.Re()) == f.Re() && (d.Im() - e.Im()) == f.Im())
 		cout << "true" << endl;
 	else
 		cout << "false" << endl;
+	
+	//////////////////////////////
+	double g = 0;
+	f = d + g;
+	cout << "f = d + g; g == 0; --> true" << endl;
+	if(d.Re() + g == 1)
+		cout << "true" << endl;
+	else
+		cout << "false" << endl;
+		
+	/////////////////////////////
+
+	f = d + e;
+
+	cout << "f = d + e  --> true" << endl;
+	if((d.Re() + e.Re()) == f.Re() && (d.Im() + e.Im()) == f.Im())
+		cout << "true" << endl;
+	else
+		cout << "false" << endl;
+	
 	return 0;
 }
 
