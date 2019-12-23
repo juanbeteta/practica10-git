@@ -48,7 +48,7 @@ main(void)
 		cout << "true" << endl;
 	else
 		cout << "false" << endl;
-		
+	
 	/////////////////////////////
 
 	f = d + e;
